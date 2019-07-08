@@ -24,6 +24,15 @@ public class TestCalsses {
 
     }
 
+    @Test
+    public void quiskSort(){
+        int[] input = {1,2,100,3};
+        QuickSort.quicksort(0,input.length-1,input);
+        int[] result = {1,2,3,100};
+        assertArrayEquals( result, input);
+    }
+
+
 
 
 
