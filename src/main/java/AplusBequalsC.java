@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class AplusBequalsC {
 
-    
+
     public static int checkPairs(int[] arr){
 
         HashMap<Integer , Integer> sum = new HashMap<Integer, Integer>();
@@ -19,7 +19,6 @@ public class AplusBequalsC {
         }
 
         return sum.values().stream().mapToInt(num -> Integer.valueOf(num)).sum();
-
     }
 
 
