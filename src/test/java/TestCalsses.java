@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestCalsses {
 
@@ -45,8 +44,12 @@ public class TestCalsses {
         String[] result = {"a","b"};
 
         assertArrayEquals( result, MergeNames.checked(n1,n2));
+    }
 
-
+    @Test
+    public void  Palindrome(){
+        String s = "daaassaaad";
+        assertTrue( Palindrome.isPalindrome(s));
     }
 
 
