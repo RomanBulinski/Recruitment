@@ -7,9 +7,10 @@ public class MergeNames {
 
         Map<String, Integer> namesN1N2 = new HashMap<>();
 
-        for (String s : n1) {
-            namesN1N2.put(s, 1);
-        }
+//        for (String s : n1) {
+//            namesN1N2.put(s, 1);
+//        }
+        Arrays.asList(n1).stream().forEach(n->namesN1N2.put(n, 1));
 
         for (String s : n2) {
             Set<String> names = namesN1N2.keySet();
