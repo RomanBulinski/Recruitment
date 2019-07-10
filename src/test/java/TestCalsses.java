@@ -32,6 +32,12 @@ public class TestCalsses {
         assertArrayEquals( result, input);
     }
 
+    @Test
+    public void  fizzBuzTest(){
+        FizzBuzz.fuuuf();
+
+    }
+
 
 
 
