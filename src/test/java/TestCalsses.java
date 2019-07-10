@@ -35,10 +35,19 @@ public class TestCalsses {
     @Test
     public void  fizzBuzTest(){
         FizzBuzz.fuuuf();
-
     }
 
 
+    @Test
+    public void  MergeNames(){
+        String[] n1 = {"a","b","c"};
+        String[] n2 = {"a","x","y","b"};
+        String[] result = {"a","b"};
+
+        assertArrayEquals( result, MergeNames.checked(n1,n2));
+
+
+    }
 
 
 
